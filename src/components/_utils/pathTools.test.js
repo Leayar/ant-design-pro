@@ -2,7 +2,7 @@ import { urlToList } from './pathTools';
 
 describe('test urlToList', () => {
   it('A path', () => {
-    expect(urlToList('/userinfo')).toEqual(['/userinfo']);
+    expect(urlToList('/userinfo')).toEqual(['/kk']);
   });
   it('Secondary path', () => {
     expect(urlToList('/userinfo/2144')).toEqual(['/userinfo', '/userinfo/2144']);

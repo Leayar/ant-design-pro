@@ -32,6 +32,7 @@ startServer.stdout.on('data', data => {
     });
     testCmd.on('exit', () => {
       startServer.kill();
+      process.exit(1);
     });
   }
 });
